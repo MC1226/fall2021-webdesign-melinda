@@ -1,0 +1,19 @@
+melin@Melindas-Laptop MINGW64 ~
+$ cd
+
+melin@Melindas-Laptop MINGW64 ~
+$ cd documents
+
+melin@Melindas-Laptop MINGW64 ~/documents
+$ cd fall2021s-webdesign-melinda
+bash: cd: fall2021s-webdesign-melinda: No such file or directory
+
+melin@Melindas-Laptop MINGW64 ~/documents
+$ cd fall2021-webdesign-melinda
+
+melin@Melindas-Laptop MINGW64 ~/documents/fall2021-webdesign-melinda (main)
+$ touch homework1-2.txt
+
+melin@Melindas-Laptop MINGW64 ~/documents/fall2021-webdesign-melinda (main)
+$
+
