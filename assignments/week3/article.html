@@ -13,7 +13,7 @@
         p {
             font-size: 24px;
             font-family:Arial, Helvetica, sans-serif;
-            color:slategray;
+            color:black;
             text-align: justify;
             line-height: 32px;
         }
@@ -30,8 +30,60 @@
             font-size: 36px;
             font-family:Arial, Helvetica, sans-serif;
             color:midnightblue;
-            text-align:left;
+            text-align:right;
 
+        }
+
+        blockquote, figcaption {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 24px;
+            color: royalblue;
+        }
+
+        img {
+            border-color:darkblue;
+            border-width: 7px;
+            border-style: solid;
+            border-radius: 20px;
+        }
+
+        ul {
+            border:darkblue 1px solid;
+        }
+
+        li {
+            border: darkblue 2px solid;
+        }
+
+        label {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: darkblue;
+        }
+
+        input, textarea {
+            background-color: white;
+            border-color: darkblue;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 2px;
+            font-size: 32px;
+            color:slategray;
+        }
+
+        textarea {
+            font-family: 'Times New Roman', Times, serif;
+            color: navy;
+        }
+
+        #last {
+            color:darkslateblue;
+        }
+
+        #first-image {
+            border-color: black;
+            width: 600px;
         }
 
     </style>
@@ -58,7 +110,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eius expedita eaque animi minus, quidem cumque rerum deserunt blanditiis, sint officiis voluptas ab facilis fugiat nostrum tempore accusamus sapiente nobis!</p>
 
         <figure>
-            <img src="images/pexels-frans-van-heerden-624015.jpg" alt="snow covered igloo with the northern lights above" title="snow covered igloo with nothern lights above" />
+            <img id="first-image" src="images/pexels-frans-van-heerden-624015.jpg" alt="snow covered igloo with the northern lights above" title="snow covered igloo with nothern lights above" />
             <figcaption>Beautiful place to visit if you like the cold.</figcaption>
         </figure>
 
@@ -72,7 +124,7 @@
             <figcaption>This beach would be a perfect place to watch the sun set and to catch a few waves.</figcaption>
         </figure>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ratione corrupti, distinctio veritatis odit alias voluptatem labore eaque vel excepturi saepe fuga consequuntur officiis porro et modi? Iste, id ducimus?</p>
+        <p id="last" class="end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ratione corrupti, distinctio veritatis odit alias voluptatem labore eaque vel excepturi saepe fuga consequuntur officiis porro et modi? Iste, id ducimus?</p>
 
         <ul>
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
