@@ -25,10 +25,25 @@
         margin-right: 100px;
         margin-top: 10px;
         margin-bottom: 20px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     #footer {
         background-color: lightgray;
+        /* margin shorthand needs values in 
+        order: top right bottom left 
+        order:top/bottom left/right
+        order: all_sides
+        */
+        margin: 0 100px 5px 10px;
+    }
+
+    #sidebar {
+        background-color: lightskyblue;
+        height: 200px;
+        width: 200px;
     }
 
     </style>      
@@ -40,10 +55,10 @@
 
             <div id="header"></div>
 
-            <div id="main"></div>
+            <div id="main">
+                <div id="sidebar"></div>
 
             <div id="footer"></div>
-
 
         </div>
 
