@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Positions</title>
+        
+        <style>
+            body {
+                margin: 0;
+            }
+
+            #red, #darkgray, #blue {
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+            }
+
+            #red {
+                background-color: red;
+                position: absolute;
+                z-index: 1;
+            }
+            
+            /* position absolute allows the element to be positioned with coordinates (left, right, top, bottom) from the corners of the parent container. Absolute also REMOVES the element for the Document Flow. */
+            #darkgray {
+                background-color: darkgray;
+                position: absolute;
+                top: 100px;
+                left: 100px;
+                z-index: 10;
+            }
+
+            /* z-index alows us to have finere control over what element will be over other elements based on the number its given. A higher numbere will put that element on top of other elements that have a lower z-index number. The default number for all elements is 0. */
+            #blue {
+                background-color: blue;
+                position: absolute;
+                top: 200px;
+                left: 200px;
+                z-index: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="red"></div>
+        <div id="darkgray"></div>
+        <div id="blue"></div>
+
+    </body>
+</html>
