@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+
+        <style>
+            body {
+                margin: 0;
+            }
+
+            main {
+                background-color:honeydew;
+            }
+
+            #gallery-box {
+                width: 900px;
+                border: black 1px solid;
+                margin: 0 auto;
+                }
+
+            .image-box {
+                margin: 10px;
+                width: 203px;
+                height: 400px;
+                border: solid cadetblue 1px;
+                display: inline-block;
+                vertical-align: top;
+            }
+            /* vertical-align is ONLY FOR aligning characters to an invisible line called "baseline" */
+
+            /*
+                display property forces an element to "display" diffeerently than its default display mode.
+
+                display modes:
+                block = The element will demand the entire line to itself and won't share it with anything else.
+                inline = The element will be treated like "text" and flow based on the amount of free space. inline elements CANNOT have a dimension (width and height).
+
+                inline-block = The element will be treated like "text" and CAN have a dimension (width and height).
+
+            */
+            
+            .image-box img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+        <header>
+            <h1>My Favorite Gallery</h1>
+        </header>
+
+        <main>
+            <div id="gallery-box">
+                <div class="image-box">
+                    <img src="images/pexels-pixabay-36717.jpg" />
+                </div><div class="image-box">
+                    <img src="images/pexels-pixabay-235990.jpg" />
+                </div><div class="image-box">
+                    <img src="images/pexels-irina-iriser-1086584.jpg" />
+                </div><div class="image-box">
+                    <img src="images/pexels-dominika-roseclay-977736.jpg" />
+                </div>
+            </div>
+
+        </main>    
+
+        </main>
+        <footer>
+            <p>Copyright held by respective owners</p>
+        </footer>
+    </div>
+    
+    </body>
+</html>
