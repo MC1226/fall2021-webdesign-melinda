@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>CSS Specificity</title>
+
+        <style>
+        
+            /*
+            Selector Weights:
+
+            Element: 1
+            Class: 10
+            IDs: 100
+
+            */
+
+            ul li a {
+
+            }
+
+            div #sidebar {
+
+            }
+
+            body div ul .odd a {
+
+            }
+
+            .first {
+                color: teal;
+            }
+
+            #unique {
+                color: violet;
+            }
+        
+            */ !important keyword is the "nuclear" option, it adds 10,000 points t the property. */
+
+            p {
+                color: red !important;
+            }
+
+            body p {
+                color: blue !important;
+            }
+            /* p {
+                color: black;
+            } */
+
+            body p {
+                color: blue;
+            }
+
+            body div p {
+                background-color: lightgray;
+                color: red;
+            }
+
+            h1 {
+                font-size: 72px;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <p class="first"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore veritatis maxime eos nemo, nisi ut animi a voluptatibus quae ipsam totam, dignissimos dicta beatae porro commodi exercitationem, repudiandae molestias quo!</p>
+
+        <p id="unique">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde perferendis repellendus eos magni molestiae necessitatibus et alias quisquam, labore tempore quibusdam voluptatibus officia voluptas, ratione atque omnis vero facere vitae?</p>
+        
+        <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error itaque ut corrupti laboriosam vero quis, cum earum quam, ipsa nihil quaerat facere doloremque, eius explicabo vel quas excepturi enim natus.</p>
+        </div>
+
+    </body>
+</html>
