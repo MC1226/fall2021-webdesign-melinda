@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-    <html lang="en">
+<html lang="en">
     
     <head>
         <meta charset="utf-8">
@@ -13,27 +13,34 @@
 
 <p>San Francisco is one of my favorite cities. Below are a few pictures of the city and the sea lions basking in the sun at Pier 39.</p>
 
-<!--This is NOT how you make an image element!-->
-<!-- <img>myimage.jpg</img>-->
+    <!-- This is NOT how you make an image element!-->
+    <!-- <img>myimage.jpg</img> -->
 
-<!--This is the CORRECT way of making an image element!-->
-<!--img is a SELF-CLOSING tag, it has no closing tag it closes itself!-->
-<!--src is an attribute, attribute, attributes are ADDITIONAL piecdes of information form an element.-->
+    <!-- This is the CORRECT way of making an image element! -->
+    <!-- img is a SELF-CLOSING tag, it has no closing tag it closes itself! -->
+    <!-- src is an attribute, attributes are ADDITIONAL pieces of information for an element. Attributes can ONLY go inside of the OPENING tag. -->
 
+    <!-- Example of a good alt description. -->
     <img src="images/pexels-eric-thurber-3688579 (1).jpg" alt="SF City Night View" title="SF City Night View" />
     <p>San Francisco City Night View</p>
-
+     
+    <!-- Example of a bad alt description. The description is describing the FILE and not the CONTENT of the file. -->
     <img src="images/pexels-belle-co-345750 (1).jpg" alt="Golden Gate Bridge" title="Waters edge at Golden Gate Bridge" />
     <p>Waters edge at Golden Gate Bridge</p>
     
+    <!--Example of a bad alt description. The description is assuming or suggesting something not related to the image. -->
     <img src="images/pexels-brian-hackworth-5872482.jpg" width="400" height="300" alt="Sea Lions at Pier 39." title="Sea Lions at Pier 39." />
     <p>I was told that the male sea lions come to Pier 39 to get away from the female sea lions.</p>
 
-<!--An anchor element, allows a piece of text to go to a different web page. -->
-<p> The following is a link to learn more about sea lions at Pier 39. <a href="https://www.pier39.com/merchant/sea-lions/">Learn more about Sea lions</a></p>
+    <!-- Anchor element, allows a piece of text to go to a different web  page. -->
 
-<p>Here is a link to live stream the <a href="https://www.mangolinkcam.com/webcams/mammals/pier392.html">sea lions at Pier 39.</a></p>
+    <!-- This anchor element is using URL mode, meaning it's going to another WEBSITE. -->
+    <p> The following is a link to learn more about sea lions at Pier 39. <a href="https://www.pier39.com/merchant/sea-lions/">Learn more about Sea lions</a></p>
+
+    <p>Here is a link to live stream the <a href="https://www.mangolinkcam.com/webcams/mammals/pier392.html">sea lions at Pier 39.</a></p>
 
 
+    <!--This anchor element is using FILE mode, meaning it's going to another FILE. -->
+    <p>Check out my <a href="firstwebpage.html">first webpage!</a></p>
 
-<p>Check out my <a href="firstwebpage.html">first webpage!</a></p>
+</html>
