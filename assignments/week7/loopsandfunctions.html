@@ -78,11 +78,19 @@
         function squareNumber (number) {
             var total = number * number;
             console.log ("The square of " + number + " is " + total);
+        
+            return total; // The return keyword allows a function call to "return" a single piece of data to where ever it was called. NOTE whenever you call the return keyword, the function ends immdiately. Example, the line below does not execute because we end the function on line 82.
+        
+        console.log("Hello function!");
         }
 
-
-        squareNumber(16);
+        var results = squareNumber(16);
         squareNumber(128);
+
+        var convertedNumber = parseFloat("60Hello");
+
+        
+        // var add2ToSquared = total + 2;
 
 
         // Combining Functions and Loops
