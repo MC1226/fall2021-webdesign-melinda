@@ -10,6 +10,14 @@
     
     <script>
 
+        var other;
+
+        // FOR LOOP: A loop that runs a code block until the condition is false.
+        // for (initialization; condition; iterator) {code block}
+        // THE CONDITION MUST CHANGE TO A FALSE AT ONE POINT IN TIME
+
+        // The ++ means that you add a 1 to the existing value of the variable.
+
         for (var iteration = 0; iteration < 10; iteration++) {
 
             console.log("hello");
@@ -18,8 +26,10 @@
         }
 
 
+
         // FUNCTIONS A collection of code that runs when you call the function name.
         // function functioName() {code block}
+
 
         // This is a function DEFINITION
         function myFunctionName () {
@@ -35,15 +45,19 @@
         myFunctionName();
         myFunctionName();
 
-        // A "for" loop can do something similar to our example function above. BUT it's missing out on some useful features.
 
+
+        // A "for" loop can do something similar to our example function above. BUT it's missing out on some useful features.
         for (var iteration = 0; iteration < 11; iteration++) {
             console.log("Hello there!");
             console.log("It's going to rain today!");
             console.log("Goodbye.");
         }
 
+
         // Function Features: inputting (giving the fucntion feature through Arguments & Parameters by using function add2Numbers() {} and outputting data (getting results using return function).
+        
+        
         
         // An addition function.
         // ARGUMENTS AND PARAMETERS
@@ -54,16 +68,18 @@
             console.log(total);
         }
 
+
         // Below is calling the function add2numbers () {} to run certain numbers. the following in brackets are code reusability.
         add2Numbers(784, 70);
         add2Numbers(60, 1);
         add2Numbers(941, 68347);
 
-
+        // Sends to the console the square of the number in the parameter.
         function squareNumber (number) {
             var total = number * number;
             console.log ("The square of " + number + " is " + total);
         }
+
 
         squareNumber(16);
         squareNumber(128);
@@ -71,27 +87,24 @@
 
         // Combining Functions and Loops
 
-        for (var counter = 0; counter < 50; counter++) {
+        for (var counter = 0; counter < 500; counter++) {
             squareNumber(counter);
         }
 
         // You can manually put it in like we did below but it will use up more space as oppose to using one line by using myFunctionName () {}; or using loop will make it look much cleaner.
 
-        console.log("Hello there!");
-        console.log("It's going to rain today!");
-        console.log("Goodbye.");
-        console.log("Hello there!");
-        console.log("It's going to rain today!");
-        console.log("Goodbye.");
-        console.log("Hello there!");
-        console.log("It's going to rain today!");
-        console.log("Goodbye.");
-        console.log("Hello there!");
-        console.log("It's going to rain today!");
-        console.log("Goodbye.");
-
-
-
+        // console.log("Hello there!");
+        // console.log("It's going to rain today!");
+        // console.log("Goodbye.");
+        // console.log("Hello there!");
+        // console.log("It's going to rain today!");
+        // console.log("Goodbye.");
+        // console.log("Hello there!");
+        // console.log("It's going to rain today!");
+        // console.log("Goodbye.");
+        // console.log("Hello there!");
+        //console.log("It's going to rain today!");
+        // console.log("Goodbye.");
 
 
 

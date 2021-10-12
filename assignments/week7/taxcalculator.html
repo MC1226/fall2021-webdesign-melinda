@@ -7,24 +7,27 @@
     <title>Tax Calculator</title>
 </head>
 <body>
-    <style>
     
-    </style>
     <h1>San Francisco Sales Tax Calculator</h1>
     
-    <p>Use this <font color="blue">calculator</font> to figure out how much <font color="red">sales tax 
-    </font> you owe on your purchases. Make sure to use numbers only. the current San Francisco sales tax rate is 8.5%.</p>
+    <p>Use this <font color="blue">calculator</font> to figure out how much <font color="red">sales tax</font> you owe on your purchases. Make sure to use numbers only. the current San Francisco sales tax rate is 8.5%.</p>
 
     <label for="input1">Purchase Subtotal</label>
     <br />
-    <input type="number" id="input1"/>
+    <input type="number" id="input1" />
     <br />
+    <!--The onClick is the JavaScript function that the element will run when it is clicked on.-->
     <button onClick="calculateTax()">Calculate</button>
 
     <h2>Results</h2>
     <p id="results"></p>
 
+    <style>
 
+        body {
+            background-color: lightgray;
+        }
+    </style>
 
 
     <script>
@@ -36,20 +39,30 @@
         // A definition for a function called calculateTax. All the code inside the curly braces will run when the function is "called".
         function calculateTax() {
 
+            // We get the value of the input box with the id of "input1". We then store this value in our own variable called subtotal. ANYTHING that comes from outside of JavaScript, is AUTOMATICALLY a string.
             var subtotal = document.getElementById("input1").value;
 
-            parseInt();
-
+            // parseInt();
+            
+            // We store the tax rate in this variable, incase we want to change it in the future.
             var taxRate = .085;
 
-            var totalTax = subtotal * taxRate;
+            // We multiply the subtotal with the tax rate to get the tax due, and store that value in totalTax variable.
+            var totalTax = parseFloat(subtotal) * taxRate;
 
+            // Because subtotal is a string, the + symbol will concentrate. Instead we will try to convert this string value to a number datatype so we can do addition instead.
             var totalExpense = parseFloat(subtotal) + totalTax;
 
+            // With the assignment operator (=) everything on the right side MUST happen first, and once a value is produced, it gets stored on the left side. Reversing this order does not work.
+            totalTax = totalTax.toFixed(2);
+            totalExpense = totalExpense.toFixed(2);
+
+            // We assign the concatenated value we build with these variables, and place them inside of the paragraph element with the ID of "results".
             document.getElementById("results").innerHTML = "Tax: $" + totalTax + "<br /> Total: $" + totalExpense;
 
         }
 
     </script>
+
 </body>
 </html>

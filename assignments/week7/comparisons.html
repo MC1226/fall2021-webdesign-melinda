@@ -42,9 +42,9 @@
         100 < 50; // false
         0 > -10; // true
         100 <= 100; // true
-        90 = 50; // true
+        90 >= 50; // true
 
-        // != The value on the right side IS NO the same as the left side.
+        // != The value on the right side IS NOT the same as the left side.
 
         100 != 50; // true
         "hello" != "hello"; // false
@@ -76,9 +76,13 @@
         }
         
 
+
+
         var isRaining = false;
         var haveUmbrella = true;
         var haveMoney = true;
+
+
 
         // Asks if the isRaining is true or false.
         if (isRaining) {
@@ -101,10 +105,11 @@
             }
 
         } else {
+            // If isRaining is false, runs the following code:
             console.log ("It is a sunny day out. Enjoy your day!");
         }
 
-        // Else if keyword. Allows you to ask a "second" questionin your if statements.
+        // Else if keyword. Allows you to ask a "second" question in your if statements.
 
         // Can the individual rent apartment.
 
@@ -116,6 +121,8 @@
             console.log("Recommended to live with parents.");
         } else if (age < 0) {
             console.log("You arent born yet!");
+        } else {
+            console.log("Sorry but I don't understand your input.")
         }
 
         // The if keyword is ALWAYS FIRST. else if keyword MUST  come after if, and BEFORE else. else keyword MUST be the lat one.
