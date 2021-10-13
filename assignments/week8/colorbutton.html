@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+        #container {
+            background-color: white;
+            width: 500px;
+            height: 200px;
+            border: solid black 5px;
+            margin: 0 auto;
+            border-radius: 20px;
+            line-height: 30px;
+            font-family: "Arial", "Helvetica", "sans-serif";
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        #color {
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        #error {
+            color: red;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="container">
+        <label for="color">Type in Hexadecimal color value</label>
+        <br />
+        <input id="color" type="text" />
+        <br />
+        <button id="runColorChange">Change Background Color</button>
+        <br />
+        <button id="runRandomColor">
+        <p id="error"></p>
+    </div>
+    
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#runColorChange").click(function () {
+
+            // the jQuery.val() takes the value of the input if the parenthesis is empty, or updates the input value with the argument in the parenthesis.
+            var userColor = $("color").val();
+
+            var userInputFirstChar = userColor.charAt(0);
+
+            if (userInputFirstChar != "#") {
+                $("error").html("Sorry, but that is not a valid hexadecimal value. Try again.");
+            }
+
+            $("body").css("background-color", userColor);
+            $("#color").keydown(function (event) {
+
+                if (event.which === 13); {
+                    console.log("Enter key was pressed!")
+
+            $("#runRandomColor").click(function ( {
+                var rgbFirstPart = "rgb(";
+                var rgbDelimiter = ", ";
+                var rgbLastPart = ")";
+
+                var firstNumber = Math.random() * 255;
+
+                var rgb = rgbFirstPart + firstNumber + rgbDelimiter + secondNumber + rgbDelimiter + thirdNumber  + rgbLastPart;
+
+                $("body").css("background-color", rgb);
+
+            });
+                
+            });
+            
+            
+        });
+
+
+
+
+
+
+
+    });
+
+
+    </script>
+</body>
+</html>
+
+
