@@ -2,9 +2,7 @@ body {
     font-family: 'Caramel', cursive;
 }
 
-p{
-    color: black;
-}
+
 header,footer{
     position: absolute;
     background-color: #000;
